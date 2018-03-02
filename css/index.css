@@ -73,12 +73,19 @@ a{
 .menu>div{
     /*text-align: center;*/
     flex: 1;
+    position: relative;
 }
 .drop{
-    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    /*visibility: hidden;*/
+    display: none;
 }
 .menu>div:hover .drop{
-    visibility: visible;
+    /*visibility: visible;*/
+    display: inline-block;
+    color: red;
 }
 .drop>ul{
     background-color: #e9e1ff;
