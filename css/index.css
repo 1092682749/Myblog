@@ -59,6 +59,7 @@
 }
 .menu li:hover{
     background:rgba(245,245,245,0.9);
+    color:black;
 }
 a{
     display: inline-block;
