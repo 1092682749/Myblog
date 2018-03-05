@@ -59,6 +59,7 @@
 }
 .menu li:hover{
     background:rgba(245,245,245,0.9);
+    color:black;
 }
 a{
     display: inline-block;
@@ -68,7 +69,7 @@ a{
     color: black;
 }
 .menu li:hover a{
-    color: white;
+    color: black;
 }
 .menu>div{
     /*text-align: center;*/
