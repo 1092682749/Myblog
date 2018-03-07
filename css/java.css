@@ -1,0 +1,32 @@
+.qqerweima{
+	position: absolute;
+	width: 100px;
+	/*object-fit: cover;*/
+	/*width: 10px;*/
+	height: 200px;
+	bottom: 100px;
+	right: 100px;
+}
+.qqerweima img{
+	width: 100px;
+	object-fit: cover;
+}
+h1{
+	width: 100%;
+	text-align: center;
+}
+.link{
+	text-align: center;
+}
+a:link{
+	color: black;
+}
+a:visited{
+	color: red;
+}
+a:hover{
+	color: #6a02b6c2;
+}
+a:active{
+	color: red;
+}
