@@ -1,1 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T02:26:25.091Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" version="14.6.6" etag="B_vlynUQaJTCytfR2JlW" type="github"><diagram id="S5zDqyXbqpfvzgdgM34H">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-27T02:54:14.911Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="yFA-U2o2H7qtsY8KYeVa" version="14.6.6" type="github">
+  <diagram id="S5zDqyXbqpfvzgdgM34H" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RgjS56Poi2AV28_rgNBj-8" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/VM_Linux_Non_Azure.svg;" vertex="1" parent="1">
+          <mxGeometry x="270" y="136.4" width="130" height="119.6" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-9" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/VM_Linux.svg;" vertex="1" parent="1">
+          <mxGeometry x="267.5" y="410" width="135" height="124.2" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-12" value="&lt;h1&gt;原 Server&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;root&lt;/b&gt;账号拥有80端口使用权限，使用nginx转发到新server的80&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="456" width="290" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-13" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/nginx-128.png" vertex="1" parent="1">
+          <mxGeometry x="385" y="400" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-14" value="&lt;h1&gt;新 Server&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;使用&lt;b&gt;apadmin&lt;/b&gt;无法直接使用80&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="136.4" width="210" height="133.6" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="RgjS56Poi2AV28_rgNBj-17" target="RgjS56Poi2AV28_rgNBj-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="265" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-17" value="80" style="fontStyle=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=2;labelBackgroundColor=none;labelBorderColor=none;fontSize=22;fontColor=#00FFFF;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-22" value="8081" style="fontStyle=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=2;strokeColor=#000000;fontColor=#00FFFF;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="210" y="75.15" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-25" value="" style="endArrow=classic;html=1;fontSize=22;fontColor=#00FFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="RgjS56Poi2AV28_rgNBj-30" target="RgjS56Poi2AV28_rgNBj-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="420" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-26" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;labelBackgroundColor=none;fontSize=22;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="350" y="350" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-27" value="" style="endArrow=none;html=1;fontSize=22;fontColor=#00FFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RgjS56Poi2AV28_rgNBj-13" target="RgjS56Poi2AV28_rgNBj-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="399" y="410" as="sourcePoint" />
+            <mxPoint x="265" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-28" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;labelBackgroundColor=none;fontSize=22;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="247.5" y="170" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-29" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.java;labelBackgroundColor=none;fontSize=22;fontColor=#FF0000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="83.9" width="27.2" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-30" value="" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;labelBackgroundColor=none;fontSize=22;fontColor=#FF0000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="214.85" y="220" width="57.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-31" value="" style="endArrow=none;html=1;fontSize=22;fontColor=#00FFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="RgjS56Poi2AV28_rgNBj-26" target="RgjS56Poi2AV28_rgNBj-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="350" as="sourcePoint" />
+            <mxPoint x="245" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RgjS56Poi2AV28_rgNBj-36" value="80" style="fontStyle=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=2;labelBackgroundColor=none;fontSize=22;strokeColor=#000000;opacity=0;fontColor=#00FFFF;" vertex="1" parent="1">
+          <mxGeometry x="379" y="394" width="61" height="66" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
