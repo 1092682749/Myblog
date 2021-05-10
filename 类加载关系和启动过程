@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-10T13:37:20.446Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36" etag="Y3ObRJi2W4TubI1dMll1" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-10T13:54:53.519Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36" etag="gUT0n6rgDsegBjpuZc0D" version="14.6.11" type="github">
   <diagram id="oE3k7g-RF8NGebiMlzeb" name="Page-1">
     <mxGraphModel dx="1038" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -43,10 +43,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="a9L3nUvm8lrvUnD57ytb-18" value="URLClassLoader" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="350" y="96" width="160" height="38" as="geometry" />
+          <mxGeometry x="350" y="96" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a9L3nUvm8lrvUnD57ytb-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="a9L3nUvm8lrvUnD57ytb-18">
           <mxGeometry y="30" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-34" value="&lt;pre&gt;URLClassLoader(URL[] urls)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="a9L3nUvm8lrvUnD57ytb-18">
+          <mxGeometry y="38" width="160" height="22" as="geometry" />
         </mxCell>
         <mxCell id="a9L3nUvm8lrvUnD57ytb-27" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="a9L3nUvm8lrvUnD57ytb-18" target="a9L3nUvm8lrvUnD57ytb-11">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -64,6 +67,36 @@
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="575" y="247" as="sourcePoint" />
             <mxPoint x="615" y="248.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-32" value="&lt;h1&gt;加载器的scope&lt;/h1&gt;&lt;div&gt;每种类加载器负责的类不一样，BootstrapClassloader负责核心类库如rt.&lt;span&gt;jar。ExtClassloader负责&lt;/span&gt;System.getProperty(&quot;java.ext.dirs&quot;);&lt;/div&gt;&lt;div&gt;AppClassloadeer则负责classpath下的通常是user程序得build路径下的类&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-77" width="300" height="167" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-33" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;以ExtClassloader加载器为例&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="310" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-35" value="继承了URLClassloader，至少在构造的的时候需要传递URL[],这个数组就决定了该类加载器得加载scope" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="580" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-38" value="&lt;pre&gt;final File[] var0 = getExtDirs();&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="235" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-40" value="&lt;pre&gt;return new Launcher.ExtClassLoader(var0);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="570" width="370" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-41" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="a9L3nUvm8lrvUnD57ytb-38" target="a9L3nUvm8lrvUnD57ytb-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-42" value="&lt;pre&gt;private static File[] getExtDirs() {&lt;br&gt;    String var0 = System.getProperty(&quot;java.ext.dirs&quot;);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="370" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a9L3nUvm8lrvUnD57ytb-44" value="" style="shape=flexArrow;endArrow=classic;html=1;entryX=0.007;entryY=0.574;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endWidth=100;endSize=13.31;width=34;" edge="1" parent="1" source="a9L3nUvm8lrvUnD57ytb-38" target="a9L3nUvm8lrvUnD57ytb-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="560" as="sourcePoint" />
+            <mxPoint x="560" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
