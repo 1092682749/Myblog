@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-13T16:01:56.068Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36" etag="MQjKkQRUQT76cZIL5nzM" version="14.6.13" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-13T16:03:17.378Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36" etag="9dMbYernwnniJ_l9mTiy" version="14.6.13" type="github">
   <diagram id="s9ck1QsH0hMPK7p8k_lF" name="Page-1">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,7 +44,7 @@
           <mxGeometry x="100" y="790" width="360" height="120" as="geometry" />
         </mxCell>
         <mxCell id="BGL98zv2xkj8la9WDETW-11" value="CAS+自旋转操作等待线程释放锁，不涉及内核对象" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="490" y="740" width="120" height="40" as="geometry" />
+          <mxGeometry x="490" y="760" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="BGL98zv2xkj8la9WDETW-12" value="Mutex对象来控制线程访问资源，这个时候线程的状态会交给操作系统控制，因为Mutex对象是内核对象，开销大，且进程需要在用户态和内核态之间切换" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="820" y="750" width="140" height="110" as="geometry" />
