@@ -1,1 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2021-05-19T12:35:44.897Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.6.13" etag="G7rHdBQ3KU-q3XCFEwgo" type="github"><diagram id="8Pmbp7TxmvE-GCKHYfuH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-19T12:50:09.549Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="jZSufW958P-_iSBmv8-K" version="14.6.13" type="github">
+  <diagram id="8Pmbp7TxmvE-GCKHYfuH" name="Page-1">
+    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-1" value="&lt;h1&gt;缓存雪崩&lt;/h1&gt;&lt;p&gt;缓存数据丢失或过期，导致大量请求直接到数据库&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-2" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-3" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+          <mxGeometry x="321.43" y="177.5" width="107.14" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-4" value="没有数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-6" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="353" y="40" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-8" value="request" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="321.43" y="90" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-9" value="请求DB" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="70" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-10" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="220" y="750" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-11" value="&lt;h1&gt;缓存穿透&lt;/h1&gt;&lt;p&gt;DB和缓存都没有的数据被大量访问，造成服务损耗&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="550" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-12" value="互斥锁：先对key加锁，请求完之后更新数据并释放锁，&lt;br&gt;缓存预热：提供服务之前先加载部分热点数据&lt;br&gt;加标记及时更新：不断监控过期状态，及时更新数据&lt;br&gt;&lt;div&gt;&lt;span&gt;设置随机过期时间：让数据不会再同一时间大量过期&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="55" width="280" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-13" value="将不存在的key设置缓存为null&lt;br&gt;对数据进行校验&lt;br&gt;布隆过滤器：可以将一定不存在的请求过滤掉" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="535" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-14" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+          <mxGeometry x="260" y="610" width="107.14" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-15" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="284.57" y="470" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-16" value="request" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="253" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-18" value="没有数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="585" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-19" value="没有数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="353" y="710" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-20" value="request" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="267.14" y="700" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-21" value="&lt;h1&gt;缓存击穿透&lt;/h1&gt;&lt;p&gt;请求的数据缓存没有，但是DB有。导致每次请求都打到DB&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="920" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vzdbrPIlt1QwwY7yipcL-22" value="加互斥锁，热点数据不设置过期时间，但是每次更改要及时更新数据" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="920" width="260" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
