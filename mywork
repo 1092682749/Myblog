@@ -1,1 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2021-06-17T07:45:03.771Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" version="14.7.10" etag="t3wxlxCZrA-kTLz-xlEW" type="github"><diagram id="tTE2qK4n3ZqDJIk-vhY2">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-21T12:04:26.717Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="GOwwuyGtHWa54oI8v4Iv" version="14.7.10" type="github">
+  <diagram id="tTE2qK4n3ZqDJIk-vhY2" name="Page-1">
+    <mxGraphModel dx="1422" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="8YsesqM0pFdEipYBb1Wo-1" target="8YsesqM0pFdEipYBb1Wo-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-1" value="Request1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-2" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="83.33" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-5" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8YsesqM0pFdEipYBb1Wo-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-3" value="Request2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-6" value="查询key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-7" value="查询key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-9" value="无则set" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="331.66" y="410" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-10" value="同时查询则会出现:都发现没锁,同时去加锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="161.66" y="470" width="448.34" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-11" value="&lt;h1&gt;解法1&lt;/h1&gt;&lt;p&gt;setnx&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="560" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8YsesqM0pFdEipYBb1Wo-12" value="&lt;h1&gt;解法2&lt;/h1&gt;&lt;p&gt;Lua脚本set时检查key&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290.83000000000004" y="560" width="190" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
