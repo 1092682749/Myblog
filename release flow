@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T07:16:33.888Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="ULca8b_oldUj0WDVujtg" version="14.7.10" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T07:53:38.912Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="bnr1cxn-AX-YuAQQTKjK" version="14.7.10" type="github">
   <diagram id="EHuvsyaGBhTH_AST-f6S" name="Page-1">
-    <mxGraphModel dx="1422" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,6 +42,24 @@
         </mxCell>
         <mxCell id="eYGplYMUwC1IWzO9BSF1-20" value="后续待补充" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eYGplYMUwC1IWzO9BSF1-22" value="创建开发分支" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eYGplYMUwC1IWzO9BSF1-23" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="210" as="sourcePoint" />
+            <mxPoint x="270" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eYGplYMUwC1IWzO9BSF1-24" value="前置工作" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="200" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eYGplYMUwC1IWzO9BSF1-25" value="http://aladdin.ppdaicorp.com/app_detail?id=51&amp;amp;tab=quality_for_single_app&amp;amp;quality_tab=code_style_check" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="130" width="580" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eYGplYMUwC1IWzO9BSF1-27" value="http://paones.ppdaicorp.com/" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="250" width="400" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
