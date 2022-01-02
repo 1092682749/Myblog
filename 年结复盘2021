@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-01-02T11:34:34.954Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="MXAVbU_Ef5MnoCBcWiaC" version="16.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-02T11:34:42.185Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="W-D1UyZ_sEjkz0ZMx9O7" version="16.1.2" type="github">
   <diagram id="_eaPFl2Zfh4-a7UBQo5_" name="Page-1">
     <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="kG4rSw7lIrY0KXi9_p_1-1" value="问题记录：&lt;br&gt;&lt;br&gt;1. 减免上游数据错误&lt;br&gt;2. 币种账套问题（两个，临时加账套，印尼数据进人民币账套）&lt;br&gt;3.资金系统1变业务系统&lt;br&gt;4.上个月数据不一致&lt;br&gt;5.客户资金数据问题&lt;br&gt;6.改模板&lt;br&gt;7.模板导入不更新&lt;br&gt;8.新模板对比差异出问题" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry width="390" height="300" as="geometry" />
+          <mxGeometry x="20" y="20" width="390" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
